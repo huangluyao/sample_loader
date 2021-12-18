@@ -41,7 +41,7 @@ if __name__ == "__main__":
         for data in loader:
             d.append(data)
     end = time.time()
-    print("pytorch DataLoader use time %.2f, total data=%d"%((end-start) * 1000, len(d)))
+    print("pytorch DataLoader use time %.2fs, total data=%d"%((end-start), len(d)))
 
     loader = SimpleDataLoader(dataset, batch_size=4, num_workers=8, shuffle=True, drop_last=True)
     d = []
@@ -52,11 +52,11 @@ if __name__ == "__main__":
 
         pass
     end = time.time()
-    print("CDataLoader use time %.2f, total data=%d" % ((end - start) * 1000, len(d)))
+    print("CDataLoader use time %.2fs, total data=%d" % ((end - start), len(d)))
 ```
 
 结果如下：
 
-`pytorch DataLoader use time 42507.71, total data=55`
-`CDataLoader use time 865.67, total data=55`
+pytorch DataLoader use time 41.60s, total data=55
+CDataLoader use time 0.89s, total data=55
 
