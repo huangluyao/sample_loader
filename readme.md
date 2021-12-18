@@ -57,6 +57,6 @@ if __name__ == "__main__":
 
 结果如下：
 
-`pytorch DataLoader use time 42507.71, total data=55
-CDataLoader use time 865.67, total data=55`
+`pytorch DataLoader use time 42507.71, total data=55`
+`CDataLoader use time 865.67, total data=55`
 
